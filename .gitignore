@@ -1,0 +1,7 @@
+/node_modules
+/dist
+.awcache/
+.vscode/
+.sass-cache/
+.env
+coverage/

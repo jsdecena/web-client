@@ -1,0 +1,5 @@
+<section *ngIf="errors">
+    <ul class="list-unstyled">
+        <li class="alert alert-danger" *ngFor="let error of errors">{{error.message}}</li>
+    </ul>
+</section>

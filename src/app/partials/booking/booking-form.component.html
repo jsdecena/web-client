@@ -1,0 +1,85 @@
+<div class="booking-form">
+    <div class="container">
+        <section class="booking-options">
+            <div class="col-lg-3 col-xs-12">
+                <div class="form-group">
+                    <select name="language" id="language" class="form-control">
+                        <option value="Vänligen välj ett språk">Vänligen välj ett språk</option>
+                    </select>
+                    <a class="options" href="#" (click)="onToggleOptions()">
+                        <span *ngIf="!options"><i class="fa fa-plus"></i> Fler val</span>
+                        <span *ngIf="options"><i class="fa fa-minus"></i> Mindre alternativ</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-xs-12">
+                <div class="form-group">
+                    <select name="language" id="language" class="form-control">
+                        <option value="#">Datum</option>
+                    </select>
+                </div>                    
+            </div>
+            <div class="col-lg-2 col-xs-12">
+                <div class="form-group">
+                    <select name="language" id="language" class="form-control">
+                        <option value="#">Från</option>
+                    </select>
+                </div>                    
+            </div>
+            <div class="col-lg-2 col-xs-12">
+                <div class="form-group">
+                    <select name="language" id="language" class="form-control">
+                        <option value="#">Till</option>
+                    </select>
+                </div>                    
+            </div>
+            <div class="col-lg-3 col-xs-12">
+                <div class="form-group">
+                    <select name="language" id="language" class="form-control">
+                        <option value="#">Telefon</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        
+        <section class="more-options" *ngIf="options">
+            <div class="clearfix"></div>
+            <div class="col-lg-3 col-xs-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="translator" value="" placeholder="Specifik översättare">
+                </div>
+            </div>
+            <div class="col-lg-3 col-xs-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="translator_gender" value="" placeholder="Översättare kön">
+                </div>                    
+            </div>
+            <div class="col-lg-3 col-xs-12">
+                <div class="form-group">
+                    <select name="language" id="translator_level" class="form-control">
+                        <option value="#">Översättarens nivå</option>
+                    </select>
+                </div>                    
+            </div>
+            <div class="col-lg-3 col-xs-12">
+                    <div class="form-group">
+                        <select name="language" id="translation_agency" class="form-control">
+                            <option value="#">Specifik Översättningsbyrå</option>
+                        </select>
+                    </div>                    
+                </div>            
+        </section>
+        <div class="clearfix"></div>
+        <div class="col-lg-12 form-submit-btn">
+            <div class="col-md-offset-5">
+                <div class="col-md-4">
+                    <div class="row">
+                        <button class="btn btn-primary btn-block">BOKA</button>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"><br /><br /></div>
+            <p class="text-center"><strong>Nytt för oss?</strong> Vänligen <a style="text-decoration: underline" href="#">registrera</a> dig som ny användare.</p>
+        </div>
+    </div>
+</div>

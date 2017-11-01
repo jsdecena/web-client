@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="box">
+    <div class="box-body">
+      <h3>My Profile</h3> <hr>
+      <section *ngIf="user">
+        <h4><strong>Name:</strong> {{user.name}}</h4>
+        <h4><strong>Email:</strong> {{user.email}}</h4>
+        <h4><strong>Company:</strong> Company Pte. Ltd.</h4>
+        <h4><strong>Department:</strong> HR</h4>
+        <h4><strong>Address:</strong> Address</h4>
+        <h4><strong>Telephone:</strong> +6399981711</h4>
+        <h4><strong>Mobile:</strong> +6399981711</h4>
+        <hr>
+        <ul class="list-unstyled list-inline">
+          <li><a class="btn btn-success" href="#"> <i class="fa fa-lock"></i> Change my password</a></li>
+          <li><a class="btn btn-primary" href="#"> <i class="fa fa-gear"></i> Notification preference</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>

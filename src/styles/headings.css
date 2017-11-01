@@ -1,0 +1,71 @@
+a, html, p, body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+}
+a:link {
+  color: #377edc;
+}
+body .btn-primary,
+html header .btn-primary,
+.nav > li > a.btn-login:hover {
+  background: #377edc;
+  border: 1px solid #1B66C6;
+  color: #fff;
+}
+.nav > li > a.btn-login:hover {
+  color: #377edc;
+  background-color: #1B66C6;
+}
+.nav > li > a.btn-login:active,
+.nav > li > a.btn-login:focus {
+  background-color: #377edc;
+  border: 1px solid #1B66C6;
+}
+
+.navbar-default .navbar-nav > li > a { 
+  font-size: 16px;
+  color: #377edc;
+  font-weight: 600;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #1c56a6;
+}
+
+.navbar-nav > li > a {
+  line-height: 55px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.navbar-default .navbar-nav > li > a.btn-login,
+.nav > li > a.btn-login:hover {
+  line-height: normal;
+  padding: 5px 10px;
+  margin-top: 25px;
+  color: #fff;
+}
+.navbar-toggle {
+  padding: 30px 15px;
+}
+body {
+    background-image: url('/assets/img/image.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+.header {
+  padding-top: 25px;
+}
+
+/** override bootstrap */
+.navbar-default .navbar-collapse,
+.navbar-default {
+  border:none;
+  background-color: #fff;
+}
+.navbar {
+  min-height: 65px;
+}
